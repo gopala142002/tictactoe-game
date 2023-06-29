@@ -14,4 +14,4 @@ const History=({ history , moveTo , currentMove})=>
     </div>
 };
 
-export default History; 
+export default History;  
