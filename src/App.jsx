@@ -14,7 +14,7 @@ function App() {
 
     const gamingBoard=history[currentMove];
 
-    const winner=calculateWinner(gamingBoard.squares);
+    const { winner , winningSquares }=calculateWinner(gamingBoard.squares);
     console.log({history,currentMove});
 
 
@@ -50,7 +50,7 @@ function App() {
       <div>
         <StatusMessage winner={winner} gamingBoard={gamingBoard}/>
 
-        <Board squares={gamingBoard.squares} handleSquareClick={handleSquareClick} />
+        <Board squares={gamingBoard.squares} handleSquareClick={handleSquareClick} winningSquares={winningSquares}/>
         <button type='button' onClick={onNewGameStart} className={`btn-reset ${winner?`active`:``}`}>Start New Game</button>
         <h3>Current Game History</h3>
         <History history={ history } moveTo={moveTo} currentMove={currentMove}/>
