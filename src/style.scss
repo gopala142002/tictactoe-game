@@ -35,7 +35,7 @@ button {
 }
 
 .history-wrapper {
-  width: 300px;
+  // width: 200px;
   text-align: center;
   margin-bottom: 20px;
   .history {
@@ -59,7 +59,7 @@ button {
       .btn-move {
     	  color: #fff;
         &.active {
-          font-weight: bold;
+          font-weight:bold;
           color: $green;
         }
       }
